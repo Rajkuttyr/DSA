@@ -57,7 +57,7 @@ public class BST{
             }
             node sucssesor = findMin(root.right);
             root.data=sucssesor.data;
-            delete(root.right, sucssesor.data);
+            root.right =delete(root.right, sucssesor.data);
             
         }
         return root;
